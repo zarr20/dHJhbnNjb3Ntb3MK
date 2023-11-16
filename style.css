@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #111111;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.custom-menu {
+    display: flex;
+    border: 1px solid white;
+    margin-top: 48px;
+}
+
+.custom-menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.custom-menu ul.menu-1 {
+    border-bottom: 1px solid white;
+}
+
+.custom-menu li {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.custom-menu ul li {
+    color: #ffffff;
+    padding: 8px;
+    border-right: 1px solid white;
+}
+
+.custom-menu ul li(:last-child) {
+    border-right: none;
+    /* Remove right border for the last li element */
+}
+
+
+/* Text with Fill Linear Gradient */
+.gradient-text {
+    background: linear-gradient(91.17deg, #C6F1F7 -4.01%, #F983E9 36.14%, #B877FF 77.44%, #C2E9CD 106.11%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+
+#footer .custom-menu {
+    margin: 52px 0px;
+}
+
+/* Grid Styles */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Column Styles */
+.column {
+    padding: 20px;
+    background: black;
+    color: white;
+}
